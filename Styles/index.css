@@ -9,3 +9,17 @@
 body {
  background-color: gainsboro;
 }
+
+#search-bar-container,
+#search-input {
+    width: 50vw;
+    height: 10vh;
+    border-radius: 30px;
+    padding-left: 2.5vw;
+    margin-top: 2vh;
+    margin-left: 3vw;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: black;
+    border: none;
+}
