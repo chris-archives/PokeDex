@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #F6F8FC;
+    font-family: 'Outfit', sans-serif;
+}
+
+#background-image {
+    position: absolute;
+    z-index: -5;
+    left: -145px;
+    top: -135px;
+    max-width: 80%;
+}
+
+main {
+    margin: 5vh 7vw 0 7vw;
+    height: 100vh;
+    display: flex;
+    align-items: start;
+}
+
+#search-bar-container {
+    width: 57vw;
+    height: 9.5vh;
+    border-radius: 25px;
+    font-size: 18px;
+    color: black;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0 15px;
+    margin-left: 7vw;
+    margin-top: 4.5vh;
+}
+
+#search-input {
+    width: 90%;
+    height: 100%;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    color: black;
+    padding-left: 15px;
+    outline: none;
+}
+
+#search-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(237, 63, 63);
+    height: 6vh;
+    width: 6vh;
+    border-radius: 20%;
+    box-shadow: 2px 2px 40px 1.5px rgb(248, 146, 146);
+    transition: all 0.1s ease;
+}
+
+#search-icon-container:hover {
+    opacity: 0.75;
+}
+
+#search-icon {
+    color: #feffff;
+}
+
+#render-location {
+    height: 100vh;
+    width: 58vw;
+    border: solid 5px black;
+    margin-top: 7vh;
+    display: grid;
+    margin-right: 2vw;
+}
+
+#unrendered-area {
+    position: fixed;
+    left: 67.5vw;
+    width: 350px;
+    height: calc(100vh - 10vh);
+    background-color: rgb(255, 255, 255);
+    border-radius: 7%;
+    padding: 2vw;
+}
+
+#no-pokemon-selected {
+    position: relative;
+    left: 7.5vw;
+    top: -20vh;
+    max-width: 100%;
+    width: 15vh;
+    height: 22vh;
+}
+
+.unrendered-text-container {
+    margin-top: 65px;
+    text-align: center;
+}
+
+.unrendered-text {
+    font-size: 19px;
+    color: rgb(135, 134, 134);
+}
+
+
