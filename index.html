@@ -4,18 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+    <!--External Stylesheets-->
     <link rel="stylesheet" href="styles/index.css">
     <script src="https://kit.fontawesome.com/d3ea89a6e5.js" crossorigin="anonymous"></script>
+
+    <!--Scripts-->
+    <script src="scripts/setup.js"></script>
+
     <title>PokeDex</title>
 </head>
 <body>
     <body>
+    <!--Loading Screen-->
+        <div class = "loading-screen">
+            <img class = "loading-screen-image" src = "src/pokeball-icon.png" />
+        </div>
+
     <!--Background Image-->
     <img id = "background-image" src = "src/pokeball-icon.png" />
     
     <!--Search-->
     <search id="search-bar-container">
-        <input id="search-input" onkeydown="search()" placeholder="Search your Pokemon">
+        <input onkeydown="search()" placeholder="Search your Pokemon">
         <div id="search-icon-container"><i id="search-icon" class="fa-solid fa-magnifying-glass"></i></div>
     </search>
 

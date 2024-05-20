@@ -1,11 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* styles */
 *,
 *:before,
 *:after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+.loading-screen {
+    width: 100vw;
+    height: 100vh;
+    transform: translate(48vw, 50vh);
+}
+
+.loading-screen-image {
+    width: 90px;
+    height: 90px;
+    max-width: 100%;
+    filter: brightness(85%);
+    animation: rotatePokeBall ease-in-out 3s infinite;
 }
 
 body {
@@ -44,7 +58,7 @@ main {
     margin-top: 4.5vh;
 }
 
-#search-input {
+input {
     width: 90%;
     height: 100%;
     border: none;
@@ -112,5 +126,14 @@ main {
     font-size: 19px;
     color: rgb(135, 134, 134);
 }
+
+/* animations */
+
+@keyframes rotatePokeBall {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
 
 
