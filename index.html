@@ -4,17 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="Styles/index.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="https://kit.fontawesome.com/d3ea89a6e5.js" crossorigin="anonymous"></script>    
     <title>PokeDex</title>
 </head>
 <body>
-        <!--Search Bar-->
-        <div id="search-bar-container">
-            <input id="search-input" onkeydown="search()" placeholder="Search your Pokemon">
-        <div id="start-search-button" class="center">
+    <body>
+    <!--Background Image-->
+    <img id = "background-image" src = "src/pokeball-icon.png" />
+    
+    <!--Search-->
+    <search id="search-bar-container">
+        <input id="search-input" onkeydown="search()" placeholder="Search your Pokemon">
+        <div id="search-icon-container"><i id="search-icon" class="fa-solid fa-magnifying-glass"></i></div>
+    </search>
 
-        <div>
+    <main>
+    <!--Render Location-->
+            <section id = "render-location">
 
-        </div>
+            </section>
+
+    <!--Unrendered Area-->
+            <section id = "unrendered-area">
+                <img id = "no-pokemon-selected" src = "src/no-pokemon-selected-image.png" />
+                <span> Select a Pokémon <br> to display here. </span>
+            </section>
+        </main>
 </body>
 </html>

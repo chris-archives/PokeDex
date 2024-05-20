@@ -7,19 +7,96 @@
 }
 
 body {
- background-color: gainsboro;
+    background: #F6F8FC;
 }
 
-#search-bar-container,
-#search-input {
-    width: 50vw;
+#background-image {
+    position: fixed;
+    z-index: -5;
+    left: -110px;
+    top: -95px;
+    max-width: 80%;
+}
+
+main {
+    border: solid 5px black;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    margin-top: 5vh;
+    height: 100vh;
+    display: flex;
+}
+
+#search-bar-container {
+    width: 57vw;
     height: 10vh;
-    border-radius: 30px;
-    padding-left: 2.5vw;
-    margin-top: 2vh;
-    margin-left: 3vw;
+    border-radius: 25px;
     font-family: sans-serif;
     font-size: 18px;
     color: black;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0 15px;
+    margin-left: 7vw;
+    margin-top: 3.5vh;
+}
+
+#search-input {
+    width: 90%;
+    height: 100%;
+    border: none;
+    border-radius: 25px;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: black;
+    padding-left: 15px;
+    outline: none;
+}
+
+#search-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(237, 63, 63);
+    height: 6vh;
+    width: 6vh;
+    border-radius: 20%;
+    box-shadow: 2px 2px 40px 1.5px rgb(248, 146, 146);
+    transition: all 0.1s ease;
+}
+
+#search-icon-container:hover {
+    opacity: 0.75;
+}
+
+#search-icon {
+    color: #feffff;
+}
+
+#render-location {
+    height: 100vh;
+    width: 58vw;
+    border: solid 5px black;
+    margin-top: 10vh;
+    display: grid;
+    margin-right: 2vw;
+}
+
+#unrendered-area {
+    height: 100vh;
+    width: 385px;
+    position: sticky !important;
+    float: right;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7%;
+}
+
+#no-pokemon-selected {
+    position: relative;
+    left: 8.5vw;
+    top: -18vh;
+    max-width: 100%;
 }
