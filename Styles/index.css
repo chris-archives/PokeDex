@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 *,
 *:before,
@@ -9,21 +10,19 @@
 
 body {
     background: #F6F8FC;
+    font-family: 'Outfit', sans-serif;
 }
 
 #background-image {
     position: fixed;
     z-index: -5;
-    left: -110px;
-    top: -95px;
+    left: -145px;
+    top: -135px;
     max-width: 80%;
 }
 
 main {
-    border: solid 5px black;
-    margin-left: 7vw;
-    margin-right: 7vw;
-    margin-top: 5vh;
+    margin: 5vh 7vw 0 7vw;
     height: 100vh;
     display: flex;
     align-items: start;
@@ -33,7 +32,6 @@ main {
     width: 57vw;
     height: 9.5vh;
     border-radius: 25px;
-    font-family: sans-serif;
     font-size: 18px;
     color: black;
     border: none;
@@ -51,7 +49,6 @@ main {
     height: 100%;
     border: none;
     border-radius: 25px;
-    font-family: sans-serif;
     font-size: 18px;
     color: black;
     padding-left: 15px;
@@ -88,21 +85,31 @@ main {
 }
 
 #unrendered-area {
-    width: 385px;
+    width: 350px;
     height: calc(100vh - 10vh);
-    top: 10vh;
     position: sticky;
     background-color: rgb(255, 255, 255);
     border-radius: 7%;
     padding: 2vw;
-    margin-top: 10vh;
 }
 
 #no-pokemon-selected {
     position: relative;
-    left: 8.5vw;
-    top: -18vh;
+    left: 7.5vw;
+    top: -20vh;
     max-width: 100%;
+    width: 15vh;
+    height: 22vh;
+}
+
+.unrendered-text-container {
+    margin-top: 65px;
+    text-align: center;
+}
+
+.unrendered-text {
+    font-size: 19px;
+    color: rgb(135, 134, 134);
 }
 
 
