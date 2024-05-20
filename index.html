@@ -3,45 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="src/Poke_Ball.png" type="image/x-icon" />
+    <link rel="icon" href="src/Poke_Ball.png" type="image/x-icon">
     <title>PokeDex</title>
 
-    <!--External Stylesheets-->
+    <!-- External Stylesheets -->
     <link rel="stylesheet" href="styles/index.css">
     <script src="https://kit.fontawesome.com/d3ea89a6e5.js" crossorigin="anonymous"></script>
 
-    <!--Scripts-->
+    <!-- Scripts -->
     <script defer src="scripts/setup.js"></script>
 </head>
 <body>
-    <body>
-    <!--Loading Screen-->
-        <div class = "loading-screen">
-            <img class = "loading-screen-image" src = "src/pokeball-icon.png" />
-        </div>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <img class="loading-screen-image" src="src/pokeball-icon.png" alt="Loading">
+    </div>
 
-    <!--Background Image-->
-    <img id = "background-image" src = "src/pokeball-icon.png" />
-    
-    <!--Search-->
+    <!-- Background Image -->
+    <img id="background-image" src="src/pokeball-icon.png" alt="Background">
+
+    <!-- Search -->
     <search id="search-bar-container">
         <input onkeydown="search()" placeholder="Search your Pokemon">
-        <div id="search-icon-container"><i id="search-icon" class="fa-solid fa-magnifying-glass"></i></div>
+        <div id="search-icon-container">
+            <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
+        </div>
     </search>
 
     <main>
-    <!--Render Location-->
-            <section id = "render-location">
+        <!-- Render Location -->
+        <section id="render-location">
+            <!-- Content will be rendered here -->
+        </section>
 
-            </section>
-
-    <!--Unrendered Area-->
-            <section id = "unrendered-area">
-                <img id = "no-pokemon-selected" src = "src/no-pokemon-selected-image.png" />
-                <div class = "unrendered-text-container">
-                <span class = "unrendered-text"> Select a Pokémon <br> to display here. </span>
-                </div>
-            </section>
-        </main>
+        <!-- Unrendered Area -->
+        <div id="unrendered-area">
+            <img id="no-pokemon-selected" src="src/no-pokemon-selected-image.png" alt="No Pokemon Selected">
+            <div class="unrendered-text-container">
+                <span class="unrendered-text">
+                    Select a Pokémon <br> to display here.
+                </span>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

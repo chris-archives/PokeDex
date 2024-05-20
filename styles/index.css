@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* styles */
+/* General Styles */
 *,
 *:before,
 *:after {
@@ -8,6 +8,13 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    background: #F6F8FC;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Loading Screen */
 .loading-screen {
     width: 100vw;
     height: 100vh;
@@ -22,11 +29,7 @@
     animation: rotatePokeBall ease-in-out 3s infinite;
 }
 
-body {
-    background: #F6F8FC;
-    font-family: 'Outfit', sans-serif;
-}
-
+/* Background Image */
 #background-image {
     position: absolute;
     z-index: -5;
@@ -35,6 +38,7 @@ body {
     max-width: 80%;
 }
 
+/* Main Content */
 main {
     margin: 5vh 7vw 0 7vw;
     height: 100vh;
@@ -42,6 +46,7 @@ main {
     align-items: start;
 }
 
+/* Search Bar */
 #search-bar-container {
     width: 58vw;
     height: 9.5vh;
@@ -89,6 +94,7 @@ input {
     color: #feffff;
 }
 
+/* Render Location */
 #render-location {
     height: 100vh;
     width: 58vw;
@@ -98,6 +104,7 @@ input {
     margin-right: 2vw;
 }
 
+/* Unrendered Area */
 #unrendered-area {
     position: fixed;
     left: 67.5vw;
@@ -127,27 +134,24 @@ input {
     color: rgb(135, 134, 134);
 }
 
-/* animations */
-
+/* Animations */
 @keyframes rotatePokeBall {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
 
-/* responsive deisgn */
+/* Responsive Design */
 @media (max-width: 1110px) {
-#unrendered-area {
-    display: none;
-}
-input,
-#search-bar-container{
-    width: 85vw;
-}
-#render-location {
-    width: 85vw;
-}
-}
+    #unrendered-area {
+        display: none;
+    }
 
+    input,
+    #search-bar-container {
+        width: 85vw;
+    }
 
-
-
+    #render-location {
+        width: 85vw;
+    }
+}
