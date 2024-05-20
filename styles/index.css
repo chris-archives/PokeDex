@@ -43,7 +43,7 @@ main {
 }
 
 #search-bar-container {
-    width: 57vw;
+    width: 58vw;
     height: 9.5vh;
     border-radius: 25px;
     font-size: 18px;
@@ -132,6 +132,20 @@ input {
 @keyframes rotatePokeBall {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+/* responsive deisgn */
+@media (max-width: 1110px) {
+#unrendered-area {
+    display: none;
+}
+input,
+#search-bar-container{
+    width: 85vw;
+}
+#render-location {
+    width: 85vw;
+}
 }
 
 
