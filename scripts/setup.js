@@ -11,8 +11,8 @@ async function fetchPokemonName() {
     return data;
     }
     catch (error) {
-        console.error("Error detected " + error);
-        alert("Error detected " + error)
+        console.error("Error detected: " + error);
+        alert("Error detected: " + error)
     }
 }
 
@@ -32,8 +32,8 @@ async function fetchPokemonType() {
         return dataTwo;
     }
     catch(error) {
-        console.error("Error detected " + error);
-        alert("Error detected " + error)
+        console.error("Error detected: " + error);
+        alert("Error detected: " + error)
     }
 }
 
