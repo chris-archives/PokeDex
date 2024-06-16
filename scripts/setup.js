@@ -15,14 +15,15 @@ async function getPokemonData(num) {
         alert("Error detected: " + error)
     }
 }
-async function getAllPokemonData() {
-    let info = [];
-    let promises = [];
-    for(let i = 1; i < 500; i++) {
-        promises.push(getPokemonData(i))
-    };
-    const pokemon = await Promise.all(promises);
-    console.log(promises);
-}
-getAllPokemonData();
+
+/* IIFE to fetch all Pokemon Data */
+(async function() {
+        let promises = [];
+        for(let i = 1; i < 500; i++) {
+            promises.push(getPokemonData(i))
+        };
+        const pokemon = await Promise.all(promises).then(data => {
+        console.log(data);
+    });
+})();
 
